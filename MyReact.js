@@ -1,9 +1,11 @@
-import {todoObj} from "./untils.js";
+import {todoObj,REACT_ELEMENT,REACT_TEXT} from "./untils.js";
 function myCreateElement(type, config, children) {
-  //
+  // 
   let key = null;
   let ref = null;
   let $$typeof = null;
+
+ 
 
   //判断config是否 key ref 。有就删除 便于后面 return
   if (config) {
@@ -28,7 +30,7 @@ function myCreateElement(type, config, children) {
   }
 
   return {
-    $$typeof: "",
+    $$typeof: REACT_TEXT,
     key, //唯一标,识
     ref, // Dom 实例
     type, //H5类型  div span ....

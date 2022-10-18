@@ -6,4 +6,4 @@ function todoObj(element) {
     ? { type: REACT_ELEMENT, content: element }
     : { type: REACT_TEXT ,content:element};
 }
-export {todoObj}
+export { todoObj, REACT_ELEMENT,REACT_TEXT}
