@@ -23,25 +23,7 @@ function myCreateElement(type, config, children) {
   }else{
     console.log("无节点");
   }
-  // 判断children 是否存在，如果存在 判断children类型
-
-  // if (children) {
-  //   if (typeof children === "string" || typeof children == "number") {
-  //     $$typeof = REACT_TEXT;
-     
-  //   } else {
-  //     $$typeof = REACT_ELEMENT;
-  //   }
-
-
-    // if (childrenLength == 1) {
-    //   props.children = children;
-    // } else if (childrenLength > 1) {
-    //   //aruments 是数组从 0开始
-    //    //
-    // }
-  // }
-
+ 
   return {
     $$typeof,
     key, //唯一标,识

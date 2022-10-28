@@ -24,6 +24,7 @@ function createDom(vdom) {
   }
   //判断是否函数组件
   else if (typeof vdom === "function") {
+
     domNode = renderFunction(vdom);
   }
   //如果是文本就 添加进去当前节点
@@ -32,7 +33,11 @@ function createDom(vdom) {
   }
   return domNode;
 }
+//处理 类组件 
 
+function renderClass(classVdom){
+
+}
 //处理函数组件
 //  函数组件会 转化后 function XX(return react.createElement(....)) 这个时候只需要生成一个真实dom
 function renderFunction(funVdom) {
